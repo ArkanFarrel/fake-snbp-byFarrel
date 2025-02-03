@@ -2,7 +2,6 @@ import { useEffect, useState } from 'react';
 import './App.css'
 import logo from "./assets/logo.png"
 
-// eslint-disable-next-line no-undef
 function MainContent({nama = "Farrel the king", status, tanggalLahir = "12/03/2004"}) {
   let [statusState, setStatus] = useState(status === "lolos");
   let noreg = Math.floor(Math.random() * 900000000) + 100000000;
@@ -64,7 +63,7 @@ function LoginInput({ onLogin }) {
             <footer className='image-footer'>SELEKSI NASIONAL BERBASIS PRESTASI</footer>
           </div>
 
-          <h1 className='title'>HASIL SELEKSI SNBP 2024</h1>
+          <h1 className='title'>HASIL SELEKSI SNBP 2025</h1>
           <span className='subtitle'>Masukkan Namamu di kartu SNBP dan Tanggal Lahir</span>
 
           <div className='formContent'>
@@ -85,7 +84,7 @@ function LoginInput({ onLogin }) {
           <footer className='footerForm'>
             <button type="submit">LIHAT HASIL SELEKSI</button>
             <div className='statusContainer'>
-              <label htmlFor="status-lulus">PENGUMUMAN HASIL SELEKSI SNBP 2024 (PDF)</label>
+              <label htmlFor="status-lulus">PENGUMUMAN HASIL SELEKSI SNBP 2025 (PDF)</label>
               <input type="checkbox" id='status-lulus' name="status-lulus" className='status' checked={status} onChange={() => setStatus(!status)} />
             </div>
           </footer>
