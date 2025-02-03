@@ -3,7 +3,7 @@ import './App.css'
 import logo from "./assets/logo.png"
 
 // eslint-disable-next-line no-undef
-function MainContent({nama = "joko the king", status, tanggalLahir = "12/03/2004"}) {
+function MainContent({nama = "Farrel the king", status, tanggalLahir = "12/03/2004"}) {
   let [statusState, setStatus] = useState(status === "lolos");
   let noreg = Math.floor(Math.random() * 900000000) + 100000000;
   let nisn = Math.floor(Math.random() * 9000000000) + 1000000000;
@@ -16,8 +16,8 @@ function MainContent({nama = "joko the king", status, tanggalLahir = "12/03/2004
           <footer className='image-footer'>SELEKSI NASIONAL BERBASIS PRESTASI</footer>
         </div>
 
-        <h1> {statusState ? "SELAMAT! ANDA DINYATAKAN LULUS!" : "ANDA DINYATAKAN TIDAK LULUS SELEKSI SNBP 2024"}</h1>
-        {statusState ? <p></p> : <p>MASIH ADA KESEMPATAN MENDAFTAR DAN MENGIKUTI SNBT 2024 ATAU SELEKSI MANDIRI PTN.</p>}
+        <h1> {statusState ? "SELAMAT! ANDA DINYATAKAN LULUS!" : "ANDA DINYATAKAN TIDAK LULUS SELEKSI SNBP 2025"}</h1>
+        {statusState ? <p></p> : <p>MASIH ADA KESEMPATAN MENDAFTAR DAN MENGIKUTI SNBT 2025 ATAU SELEKSI MANDIRI PTN.</p>}
       </header>
 
       <main className='main'>
